@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Layout Suite (VLSuite)</title>
+    <link rel="icon" type="image/png" href="./avatar.png" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;500;900&family=Source+Sans+3:ital,wght@0,200;1,200&display=swap');
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Sans 3', sans-serif;
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 3em 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      section {
+        text-align: center;
+        font-size: 3em;
+        width: 100%;
+      }
+      h1 {
+        font-size: clamp(.9em, 8vw, 1.5em);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      h1 span {
+        display: inline-block;
+      }
+      p {
+        font-size: clamp(.5em, 2vw, 1em);
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+      .logo {
+        width: 200px;
+        height: auto;
+        vertical-align: middle;
+      }
+      .preview-wp {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      .preview {
+        position: relative;
+        padding-bottom: 50%;
+        
+      }
+      a {
+        color: #cf8a23;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+      .preview img {
+        width: 60%;
+        height: auto;
+        border-radius: 0.1em;
+        box-shadow: 0 0 0.2em #cf8a23;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        transition: all .25s ease-in-out;
+        cursor: zoom-in;
+      }
+      .preview img:nth-child(1) {
+        position: absolute;
+        left: 10%;
+        top: 0;
+      }
+      .preview img:nth-child(2) {
+        position: absolute;
+        left: 20%;
+        top: 10%;
+      }
+      .preview img:nth-child(3) {
+        position: absolute;
+        left: 30%;
+        top: 20%;
+      }
+      .preview img:hover,
+      .preview img:focus {
+        z-index: 2;
+        transform: scale(1.8);
+      }
+    </style>
+</head>
+<body>
+    <section>
+        
+        <h1><img src="./visual-layout-suite-vlsuite.png" alt="Logo VLSuite" class="logo"><span>Visual Layout Suite (VLSuite)</span></h1>
+        <p><a target="_blank" href="https://www.drupal.org/project/vlsuite">View on drupal.org</a></p>
+        <div class="preview-wp">
+        <div class="preview">
+            <img src="./visual-layout-suite-vlsuite-choose-block.png" alt="Visual Layout Suite (VLSuite) - Layout builder Choose block">
+            <img src="./visual-layout-suite-vlsuite-ui-preview.png" alt="Visual Layout Suite (VLSuite) - Layout builder UI Preview">
+            <img src="./visual-layout-suite-vlsuite-layout-builder-utility-classes-live-previewer.png" alt="Visual Layout Suite (VLSuite) - Utility classes live previewer">
+        </div>
+        </div>
+        <p>Coming soon...</p>
+    </section>
+</body>
+</html>
